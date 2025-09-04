@@ -1,0 +1,8 @@
+#!/bin/sh
+#crear y activar el entorno virtual
+python -m venv .venv
+source .venv/bin/activate
+#iinstalar el flask 
+pip install flask
+#crear la base de datos
+sqlite3 valores.sqlite < valores.sql
